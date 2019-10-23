@@ -1,0 +1,79 @@
+<!--train name
+destination
+first train in military time
+frequency - in minutes
+calc when next train will arrive
+relative to current time 
+
+-->
+
+
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <!--<link rel="stylesheet" href="style.css"> -->
+        <title>Title</title>
+    </head>
+
+    <table class="table table-dark trainTable">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">First Train Time</th>
+                <th scope="col">Frequency</th>
+              </tr>
+
+
+            </thead>
+            <tbody>
+       
+              
+            </tbody>
+          </table>
+
+    <body>
+        <form id= "choo">
+            <div class="form-group">
+                <label for="train-name">Train Name</label>
+                <input type="text" class="form-control" id="train-name" aria-describedby="Train-Name"
+                    placeholder="Train Name">
+                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                -->
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="Destination">
+            </div>
+            <div class="form-group">
+                    <label for="trainTime">First Train Time(HHmm-military time)</label>
+                    <input type="time" class="form-control" id="trainTime" aria-describedby="First Train Time(HHmm-military time)"
+                        placeholder="Enter train time">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="frequency">Frequency(mm)</label>
+                    <input type="number" class="form-control" id="frequency" placeholder="Frequency(mm)">
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+        <script src="./logictrainsche.js"></script>
+
+    </body>
+
+    </html>
